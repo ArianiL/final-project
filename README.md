@@ -3,7 +3,7 @@
 CollabDraw: Collaborative Drawing Program
 
 # Repository
-https://github.com/ArianiL/final.git 
+https://github.com/ArianiL/final-project
 
 # Description
 CollabDraw is a collaborative drawing program that allows multiple users to work together in real-time on a shared canvas. It enables users to express their creativity, collaborate with others, and create collaborative artworks regardless of their physical location. This project is relevant to digital arts and media as it promotes collaboration, creativity, and community engagement through a digital platform.
