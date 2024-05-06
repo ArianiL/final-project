@@ -1,44 +1,43 @@
-# final-project
+# Drawing Program
 
-CollabDraw: Collaborative Drawing Program
+## Demo
+Demo Video: <URL>
 
-# Repository
-https://github.com/ArianiL/final-project
+## GitHub Repository
+GitHub Repo: https://github.com/ArianiL/final-project 
 
-# Description
-CollabDraw is a collaborative drawing program that allows multiple users to work together in real-time on a shared canvas. It enables users to express their creativity, collaborate with others, and create collaborative artworks regardless of their physical location. This project is relevant to digital arts and media as it promotes collaboration, creativity, and community engagement through a digital platform.
+## Description
+This Python program creates a simple drawing program using the `turtle` module, similar to basic drawing features found in software like Procreate. Here's what the program does:
 
-# Features
-- Real-time Collaboration: Multiple users can connect to the same canvas and see each other's changes in real-time, fostering collaboration and teamwork.
-- Shared Canvas: The program provides a shared canvas where users can draw, paint, and sketch together, with changes instantly visible to all participants.
-- Drawing Tools: A variety of drawing tools including brushes, pencils, erasers, shapes, and text for users to create their artwork.
+1. Setup Function (`setup()`):
+   - Initializes the turtle graphics window with a size of 800x600 pixels.
+   - Sets the window title to "Simple Drawing Program".
+   - Sets the drawing speed to maximum.
+   - Sets the initial pen size to 2 pixels.
+   - Sets the initial pen color to black.
 
-# Challenges
-- Real-time Synchronization: Implementing real-time synchronization of drawing actions across multiple users while maintaining performance and consistency.
-- Conflict Resolution: Developing algorithms to handle conflicts when multiple users attempt to edit the same area of the canvas simultaneously.
+2. Draw Function (`draw_line(x, y)`):
+   - Draws a line when the mouse is dragged, moving the turtle to the specified coordinates.
 
-# Outcomes
-Ideal Outcome:
-- The ideal outcome is to create a seamless and engaging collaborative drawing platform that fosters creativity, communication, and community interaction among users.
+3. Color Functions (`set_red()`, `set_blue()`, `set_green()`):
+   - Changes the pen color to red, blue, or green, respectively.
 
-# Minimal Viable Outcome:
-- The minimal viable outcome is a functional collaborative drawing program with basic real-time collaboration, drawing tools, and chat functionality, demonstrating its potential for collaborative artwork creation.
+4. Clear Screen Function (`clear_screen()`):
+   - Clears the drawing from the screen.
 
-# Milestones
+5. Eraser Function (`erase()`):
+   - Turns the pen color to white and increases the pen size to 20 pixels, effectively acting as an eraser.
 
-- Week 1
-  1. Research and prototype real-time communication protocols for collaborative drawing.
-  2. Set up a user authentication system
-  
-- Week 2
-  1. Develop basic drawing tools and canvas functionality.
-  2. Implement real-time synchronization of drawing actions between users.
-  
-- Week 3
-  1. Integrate chat functionality for communication between users during drawing sessions.
-  2. Implement history playback feature to review drawing changes and contributions.
-  
-- Week 4 (Final)
-  1. Enhance user interface design and user experience based on feedback and usability testing.
-  2. Conduct comprehensive testing and debugging to ensure stability, performance, and security.
-  3. Prepare documentation and promotional materials for public release and dissemination.
+6. Reset Pen Function (`reset_pen()`):
+   - Resets the pen color to black and the pen size to 2 pixels, reverting the pen back to its default drawing settings.
+
+7. Brush Size Functions (`increase_brush_size()`, `decrease_brush_size()`):
+   - Increases or decreases the brush size by one pixel.
+
+8. Main Function (`main()`):**
+   - Calls the `setup()` function to set up the drawing program.
+   - Sets up event listeners for drawing lines, changing colors, clearing the screen, erasing, and adjusting the brush size.
+   - Listens for events and starts the turtle graphics event loop.
+
+9. Execution Block:
+   - Calls the `main()` function when the script is executed as the main program.
